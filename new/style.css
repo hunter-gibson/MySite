@@ -1,0 +1,67 @@
+#score{
+    text-align: center;
+}
+#game{
+    width:600px;
+    height:300px;
+    border: 2px solid black;
+    margin:auto;
+    background-size: cover;
+}
+
+#dino{
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 225px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAaVBMVEX///8AAAA/Pz8SEhIvLy8mJiYeHh6/v78pKSkyMjIbGxshISF3d3eTk5Pr6+tnZ2fPz88LCws3NzdDQ0Ofn5/39/fj4+Pb29tISEhPT0+Dg4Nvb297e3tVVVVaWlpiYmKOjo6np6eysrJGdRKvAAACw0lEQVR4nO2cfW+iQBCHW0oPOb2qcFV8u7b3/T/khVmTLnERrWf3t+R5/pjIpE3mYRJlWJaHBwAAAAAAAAAAAIAUWRmvscu4neVjy+/YZdwOImogokb6IovKKCcth7LFxTKz+MfiPHaZwxTWiscni5nF/DSVxS5zGETUQESNIjN2xpt93rhU7R28xS5zmGNHXuxgl3JHEBEDETWKn8bCRt2dfc5c6tlibXETu8xhxvM7gogYiKgxHhGbcSe5xcZi7VLF4pN17DKH6e/IS+zSrgMRNRBRo/Dn2t2sZWtxlthiSacjv2JXcwOIqIGIGoU/1yYtMpqOICIGImqMR8TNtW5VN+Xl6fF0BBExEFGjM+ryrSUAImogokbxw5hYfF+3rGLX9CUCt0wTWNUJgIgaiKgxApFt3rJ5NnKLjcVD7MquZG6nv0y/I4iogYga+76nlQ9bI5lV3d6OpLbOjogaiOhgA+16btNt5o+6jZ9KYOL1T3/SHUFEDUTUUBY5brn199dubJTNA/WU3lxbn466x1Rm//7xzSJXPWN5WUfi3A5GBBFEzrN2Dx3vLbott01t+CIrN8Q23lwbGHU7qagLvfO+jgT6ptaRDoggcidGI9LZctsR8efa+nTU7aRyi3Tkf4AIIncCETWRmb/ltrKJ9WCx6Z1r/VTmUm4g1rloHNgXLd0RRBBB5Dy967VfSGl+awVOv3RHEEEEkfPspy31cYh1BxYzi1OXagZSlV1rffeyQoDLLnXVFnoCIILInUBETeR10cfEH3X911Id3Mup3F/Frv8Clt7pr9zpd6nGNSl2fReDiBqIqBGYa91y8LvFdDbxBTqSzGPXHRBRAxE1pv4Srlv7TVNkNB1BRA1E1BiNSOB1y5U98/w3dmVXsvR60bmMT+1NNYiogYgae+9Fy1v/yecUbsoBAAAAAAAAAAAApMk/wi5JlxKfC3YAAAAASUVORK5CYII=");
+    background-size: cover;
+}
+#rock{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 175px;
+    left: 550px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtyJ68Yl1J_MoXD4R41hAm5zMWBSVI09fsw&usqp=CAU");
+    background-size: cover;
+    animation: rock 1.33s infinite;
+}
+@keyframes rock{
+    0%{left: 550px;}
+    100%{left: -50px; }
+}
+
+.jump-animation{
+    animation: jump 0.5s ;
+}
+
+@keyframes jump{
+    0%{top: 225px;}
+    50%{top: 75px;}
+    75%{top: 75px;}
+100%{top: 225px; } }
+h1{
+    text-align: center;
+    font-size: 500%;
+}
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: rgb(145, 145, 145); /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgb(145, 145, 145); /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #635e5e; /* Add a green color to the "active/current" link */
+    color: rgb(3, 3, 3);
+  }
